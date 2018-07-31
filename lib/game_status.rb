@@ -22,10 +22,10 @@ end
 
 def draw?(board)
   #if the board is FULL && nobody has WON
-  (board.none? { |i| i == " " }) && (!won?(board))
+  board.none? { |i| i == " " } && !won?(board)
 end
 
 def over?(board)
   #if someone has won, or it is draw
-  
+  won?(board) || draw?(board)
 end
