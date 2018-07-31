@@ -16,12 +16,16 @@ def won?(board)
 end 
 
 def full?(board)
+  #if there are NO EMPTY SPACES
   board.none? { |i| i == " " }
 end
 
 def draw?(board)
   #if the board is FULL && nobody has WON
-  (board.none? { |i| i == " " } ? true : false) && (!won?(board) ? true : false)
+  (board.none? { |i| i == " " }) && (!won?(board))
 end
 
-
+def over?(board)
+  #if someone has won, or it is draw
+  
+end
