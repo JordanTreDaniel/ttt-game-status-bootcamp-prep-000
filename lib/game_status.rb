@@ -16,9 +16,12 @@ def won?(board)
 end 
 
 def full?(board)
-  board.none? { |i| i == " " } ? true : false
+  board.none? { |i| i == " " }
 end
 
 def draw?(board)
+  #if the board is FULL && nobody has WON
   (board.none? { |i| i == " " } ? true : false) && (!won?(board) ? true : false)
 end
+
+
