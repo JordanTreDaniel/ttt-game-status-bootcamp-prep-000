@@ -11,7 +11,7 @@ def won?(board)
     return false 
   end
   WIN_COMBINATIONS.each do |combo|
-    if (board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]])
+    if (board[combo[0]] == board[combo[1]] && board[combo[1]] == board[combo[2]]) && board[combo[0]] != " "
       return combo
     end 
   end
