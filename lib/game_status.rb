@@ -26,6 +26,10 @@ def draw?(board)
 end
 
 def over?(board)
-  #if someone has won, or it is draw
+  #if someone has WON, or it is DRAW
   won?(board) || draw?(board)
+end
+
+def winner(board)
+  won?(board)[0]
 end
