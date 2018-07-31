@@ -20,5 +20,5 @@ def full?(board)
 end
 
 def draw?(board)
-  board.none? { |i| i == " " } ? false : true
+  board.none? { |i| i == " " } ? true : false
 end
