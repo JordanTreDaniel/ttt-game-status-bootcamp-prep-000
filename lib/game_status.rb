@@ -16,9 +16,9 @@ def won?(board)
 end 
 
 def full?(board)
-  board.none? { |i| i == " "} ? true : false
+  board.none? { |i| i == " " } ? true : false
 end
 
 def draw?(board)
-  board.none? { |i| i == " "| ? false : true
+  board.none? { |i| i == " " } ? false : true
 end
